@@ -1,6 +1,6 @@
 # HealthVault
 
-![Healthcare dashboard overview](screenshots/dashboard_overview.png)
+![Healthcare dashboard overview](screenshots/Executive_Overview.png)
 
 ## 1. Project Title & Objective
 
@@ -84,8 +84,8 @@ Core joins:
 ![Executive overview dashboard](screenshots/Executive_Overview.png)
 ![Patient Analytics dashboard](screenshots/Patient_Analytics.png)
 ![Doctor & Appointment Analytics dashboard](screenshots/Doctor_&_Appointment_Analytics.png)
-![Executive overview dashboard](screenshots/dashboard_overview.png)
-![Executive overview dashboard](screenshots/dashboard_overview.png)
+![Treatment Analytics dashboard](screenshots/Treatment_Analytics.png)
+![Financial Analytics dashboard](screenshots/Financial_Analytics.png)
 
 The dashboard contains five pages:
 
@@ -102,11 +102,16 @@ The dashboard contains five pages:
 | Registered patients | 50 |
 | Doctors | 10 |
 | Appointment records | 200 |
-| Completed appointments | 46 (23.0%) |
-| Cancelled appointments | 51 (25.5%) |
-| No-show appointments | 52 (26.0%) |
-| Scheduled appointments | 51 (25.5%) |
+| Completed appointments | 46  |
+| Cancelled appointments | 51  |
+| Appointments Not show  | 52  |
+| Collected revenue rate | 31.46 % |
+| Missing visit rate | 26 % |
+| Scheduled appointments | 51 |
 | Recorded treatments | 200 |
+| Female patient | 19  |
+| Male patient | 39  |
+| Patient average age | 45.76 |
 | Total recorded treatment cost | ₹5,51,249.85 |
 | Total billed amount | ₹5,51,249.85 |
 | Paid bills | 64 |
@@ -124,31 +129,3 @@ The dashboard contains five pages:
 3. **Collections trail billing:** **₹1,73,424.90** is marked paid out of **₹5,51,249.85** billed, a **31.46%** collection rate in this dataset.
 4. **Payment follow-up deserves attention:** **₹1,84,612.01** is pending. An additional **₹1,93,212.94** is marked failed; failed transactions should not automatically be treated as recoverable receivables.
 5. **Data quality requires investigation:** Treatment and billing records are linked to appointments with statuses such as Scheduled, Cancelled and No-show. Consequently, recorded treatment counts and costs should not automatically be interpreted as verified completed care.
-
-### Recommendations
-
-- Investigate no-show and cancellation drivers before changing scheduling policies.
-- Monitor doctor workloads by specialization and branch to identify imbalances.
-- Track pending bills separately from failed payments and monitor collection rates monthly.
-- Validate treatment and billing records against appointment status before using the data for clinical operational decisions.
-- Treat branch-level revenue as **doctor-associated branch revenue** unless the dataset independently confirms the physical service location.
-
-## 7. How to Run
-
-1. Download or clone this project folder.
-2. Open `healthcare_interactive_dashboard.html` in Chrome, Edge or Firefox.
-3. Use the sidebar to navigate between the five dashboard pages.
-4. Apply filters at the top of the page to explore the records.
-5. To rebuild in Power BI, import the five CSV files, establish the relationships above, and create the measures described in the KPI section.
-
-## 8. Project Limitations
-
-- Data provenance is not independently verified; findings describe the supplied dataset, not necessarily a real hospital.
-- Patient and billing datasets include sensitive-looking fields. **For a public GitHub repository, do not upload raw files containing patient names, phone numbers, email addresses, addresses or insurance numbers without appropriate authorization and anonymization.**
-- The delivered HTML embeds joined records, including personally identifying fields. **Do not publish that HTML publicly without first removing or anonymizing those fields.**
-- The static preview is generated from the supplied CSVs; it is not a screenshot of the Power BI desktop application.
-- Appointment status and treatment/billing links require business validation.
-
----
-
-**Project category:** Data Analytics Portfolio · Healthcare · Dashboarding · Financial & Operational Analysis

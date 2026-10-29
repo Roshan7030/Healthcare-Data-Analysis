@@ -83,7 +83,7 @@ Core joins:
 
 ![Executive overview dashboard](screenshots/Executive_Overview.png)
 ![Patient Analytics dashboard](screenshots/Patient_Analytics.png)
-![Executive overview dashboard](screenshots/dashboard_overview.png)
+![Doctor & Appointment Analytics dashboard](screenshots/Doctor_&_Appointment_Analytics.png)
 ![Executive overview dashboard](screenshots/dashboard_overview.png)
 ![Executive overview dashboard](screenshots/dashboard_overview.png)
 
